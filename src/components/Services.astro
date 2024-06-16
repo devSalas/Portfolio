@@ -1,0 +1,24 @@
+---
+import { services } from "../data/services";
+---
+
+<section>
+  <header class="py-12">
+    <h2 class="text-4xl font-bold">Servicios</h2>
+  </header>
+  <div>
+    {
+      services.map(({ title, description, image }) => (
+        <article class="flex even:flex-row-reverse">
+          <div class="w-1/2 p-12">
+            <h3 class="text-4xl">{title}</h3>
+            <p class="text-xl">{description}</p>
+          </div>
+          <div class="w-1/2">
+            <img class="aspect-square bg-neutral-200" src={image} alt="" />
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</section>

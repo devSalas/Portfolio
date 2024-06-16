@@ -1,0 +1,23 @@
+---
+import { links } from "../data/links";
+---
+
+<header class="fixed inset-x-0">
+  <div class="py-3 px-6 grid grid-cols-3">
+    <div class="flex justify-start items-center">
+      <h2 class="text-xl font-bold">Sunetya.</h2>
+    </div>
+
+    <div class="flex justify-center items-center">
+      <nav class="flex gap-3">
+        {links.map(({ title, href }) => <a href={href}>{title}</a>)}
+      </nav>
+    </div>
+
+    <div class="flex justify-end items-center">
+      <a class="bg-purple-400 text-white py-3 px-6 rounded-full" href=""
+        >Cotiza tu Página Web</a
+      >
+    </div>
+  </div>
+</header>

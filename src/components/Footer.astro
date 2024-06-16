@@ -1,0 +1,23 @@
+---
+import { links } from "../data/links";
+import { socialNetworks } from "../data/social-networks";
+---
+
+<footer class="bg-neutral-100">
+  <div class="flex justify-between gap-12 py-12">
+    <h2 class="text-2xl font-bold">Sunetya.</h2>
+    <div class="flex gap-12">
+      <nav class="flex flex-col">
+        <h3>SECTION</h3>
+        {links.map(({ title, href }) => <a href={href}>{title}</a>)}
+      </nav>
+      <nav class="flex flex-col">
+        <h3>REDES</h3>
+        {socialNetworks.map(({ title, href }) => <a href={href}>{title}</a>)}
+      </nav>
+    </div>
+  </div>
+  <div class="py-12">
+    <p class="text-center">© 2024 Sunetya. Todos los derechos reservados.</p>
+  </div>
+</footer>
