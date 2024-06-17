@@ -9,13 +9,13 @@ import { services } from "../data/services";
   <div>
     {
       services.map(({ title, description, image }) => (
-        <article class="flex even:flex-row-reverse">
-          <div class="w-1/2 p-12">
-            <h3 class="text-4xl">{title}</h3>
-            <p class="text-xl">{description}</p>
+        <article class="flex even:flex-row-reverse gap-24">
+          <div class="w-1/2 flex flex-col justify-center gap-12">
+            <h3 class="text-sky-900 text-5xl font-bold">{title}</h3>
+            <p class="text-sky-800 text-2xl text-balance">{description}</p>
           </div>
           <div class="w-1/2">
-            <img class="aspect-square bg-neutral-200" src={image} alt="" />
+            <img class="aspect-square object-contain" src={image} alt="" />
           </div>
         </article>
       ))

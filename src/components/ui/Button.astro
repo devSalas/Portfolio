@@ -5,6 +5,9 @@ interface Props {
 const { href } = Astro.props;
 ---
 
-<a class="bg-purple-400 text-white py-4 px-8 rounded-full" href={href}>
+<a
+  class="bg-sky-500 text-white font-bold hover:bg-sky-600 py-4 px-8 rounded-full transition-colors"
+  href={href}
+>
   <slot />
 </a>
