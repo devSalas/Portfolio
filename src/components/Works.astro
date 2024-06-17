@@ -2,9 +2,12 @@
 import WorkCard from "./WorkCard.astro";
 ---
 
-<section id="works" class="py-24">
-  <header class="py-12">
-    <h2 class="text-neutral-600 text-4xl">Nuestro Trabajo</h2>
+<section id="works" class="py-24 flex flex-col gap-12">
+  <header class="flex flex-col gap-6">
+    <h2 class="text-neutral-600 text-4xl text-center">Nuestro Trabajo</h2>
+    <p class="text-neutral-500 text-xl text-center">
+      Proyectos que Reflejan Nuestra Pasión y Experiencia
+    </p>
   </header>
   <div class="grid md:grid-cols-2 gap-12">
     <WorkCard />
