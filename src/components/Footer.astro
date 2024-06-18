@@ -3,28 +3,42 @@ import { links } from "../data/links";
 import { socialNetworks } from "../data/social-networks";
 ---
 
-<footer class="bg-neutral-100">
+<footer class="">
   <div class="max-w-7xl mx-auto px-6 flex justify-between gap-12 py-12">
     <div class="flex flex-col gap-3">
-      <h2 class="text-2xl font-bold">Sunetya.</h2>
-      <p class="md:w-96">
+      <h2 class="text-neutral-200 text-2xl font-bold">Sunetya.</h2>
+      <p class="text-neutral-400 md:w-96">
         Páginas web profesionales y personalizadas en Perú. Transformamos tus
         ideas en experiencias digitales impactantes.
       </p>
     </div>
     <div class="flex gap-12">
       <nav class="min-w-32 flex flex-col gap-3">
-        <h3 class="text-sm font-bold">SECTION</h3>
-        {links.map(({ title, href }) => <a href={href}>{title}</a>)}
+        <h3 class="text-neutral-300 text-sm font-bold">SECTION</h3>
+        {
+          links.map(({ title, href }) => (
+            <a class="text-neutral-400" href={href}>
+              {title}
+            </a>
+          ))
+        }
       </nav>
       <nav class="min-w-32 flex flex-col gap-3">
-        <h3 class="text-sm font-bold">REDES</h3>
-        {socialNetworks.map(({ title, href }) => <a href={href}>{title}</a>)}
+        <h3 class="text-neutral-300 text-sm font-bold">REDES</h3>
+        {
+          socialNetworks.map(({ title, href }) => (
+            <a class="text-neutral-400 " href={href}>
+              {title}
+            </a>
+          ))
+        }
       </nav>
     </div>
   </div>
-  <hr />
+
   <div class="py-12">
-    <p class="text-center">© 2024 Sunetya. Todos los derechos reservados.</p>
+    <p class="text-neutral-400 text-center">
+      © 2024 Sunetya. Todos los derechos reservados.
+    </p>
   </div>
 </footer>

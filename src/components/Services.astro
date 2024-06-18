@@ -1,27 +1,21 @@
 ---
 import { services } from "../data/services";
+import Section from "./ui/Section.astro";
 ---
 
-<section id="services" class="py-24 flex flex-col gap-12">
-  <header class="flex flex-col gap-6">
-    <h2 class="text-3xl font-bold text-center">Servicios</h2>
-    <p class="text-xl text-center">
-      Impulsa tu Negocio con Nuestros Servicios Especializados
-    </p>
-  </header>
-  <div>
+<Section
+  id="services"
+  title="Servicios"
+  subtitle="Impulsa tu Negocio con Nuestros Servicios Especializados"
+>
+  <div class="grid grid-cols-3">
     {
-      services.map(({ title, description, image }) => (
-        <article class="flex even:flex-row-reverse gap-24">
-          <div class="w-1/2 flex flex-col justify-center gap-12">
-            <h3 class="text-sky-900 text-5xl font-bold">{title}</h3>
-            <p class="text-sky-800 text-2xl text-balance">{description}</p>
-          </div>
-          <div class="w-1/2">
-            <img class="aspect-square object-contain" src={image} alt="" />
-          </div>
+      services.map(({ title, description }) => (
+        <article class="flex flex-col gap-6 p-6">
+          <h3 class="text-neutral-300 text-2xl font-bold">{title}</h3>
+          <p class="text-neutral-400 text-balance">{description}</p>
         </article>
       ))
     }
   </div>
-</section>
+</Section>

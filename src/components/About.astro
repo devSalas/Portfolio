@@ -1,22 +1,22 @@
 ---
 import Button from "./ui/Button.astro";
+import Section from "./ui/Section.astro";
 ---
 
-<section id="about" class="grid grid-cols-2 py-24">
-  <h1 class="text-sky-800 text-2xl uppercase">¿Quiénes Somos?</h1>
-  <div>
-    <p class="text-neutral-900 text-5xl mb-12">
-      En Sunetya, somos apasionados por el diseño y el desarrollo web. Nos
-      dedicamos a crear páginas web profesionales y personalizadas para negocios
-      en Perú.
-    </p>
-    <p class="text-sky-800 text-5xl mb-12">
-      Con un enfoque en la calidad, la innovación y la satisfacción del cliente,
-      trabajamos para transformar tus ideas en experiencias digitales
-      impactantes.
-    </p>
-    <div class="flex justify-center">
-      <Button href="">Contáctanos para saber más</Button>
-    </div>
+<Section id="about" title="¿Quiénes Somos?">
+  <p>
+    En Sunetya, nos apasiona el diseño y desarrollo web. Creamos páginas web
+    profesionales y personalizadas para negocios en Perú, enfocándonos en la
+    calidad, la innovación y la satisfacción del cliente. Transformamos tus
+    ideas en experiencias digitales impactantes.
+  </p>
+  <div class="flex justify-center">
+    <Button href="">Contáctanos para saber más</Button>
   </div>
-</section>
+</Section>
+
+<style>
+  p {
+    @apply text-neutral-300 text-5xl text-center;
+  }
+</style>

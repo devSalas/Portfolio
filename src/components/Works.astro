@@ -1,16 +1,15 @@
 ---
 import WorkCard from "./WorkCard.astro";
+import Section from "./ui/Section.astro";
 ---
 
-<section id="works" class="py-24 flex flex-col gap-12">
-  <header class="flex flex-col gap-6">
-    <h2 class="text-neutral-600 text-4xl text-center">Nuestro Trabajo</h2>
-    <p class="text-neutral-500 text-xl text-center">
-      Proyectos que Reflejan Nuestra Pasión y Experiencia
-    </p>
-  </header>
+<Section
+  id="works"
+  title="Nuestro Trabajo"
+  subtitle="Proyectos que Reflejan Nuestra Pasión y Experiencia"
+>
   <div class="grid md:grid-cols-2 gap-12">
     <WorkCard />
     <WorkCard />
   </div>
-</section>
+</Section>

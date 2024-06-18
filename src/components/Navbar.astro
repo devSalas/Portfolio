@@ -6,14 +6,17 @@ import Button from "./ui/Button.astro";
 <header class="fixed inset-x-0">
   <div class="py-3 px-6 grid grid-cols-3">
     <div class="flex justify-start items-center">
-      <h2 class="text-sky-900 text-xl font-bold">Sunetya.</h2>
+      <h2 class="text-neutral-200 text-xl font-bold">Sunetya.</h2>
     </div>
 
     <div class="flex justify-center items-center">
       <nav class="flex gap-3">
         {
           links.map(({ title, href }) => (
-            <a class="py-2 px-4" href={href}>
+            <a
+              class="text-neutral-400 hover:text-neutral-200 font-semibold py-3 px-6 transition-colors"
+              href={href}
+            >
               {title}
             </a>
           ))
@@ -22,7 +25,10 @@ import Button from "./ui/Button.astro";
     </div>
 
     <div class="flex justify-end items-center">
-      <Button href="">Cotiza tu Página Web</Button>
+      <a
+        class="py-3 px-6 bg-white/10 hover:bg-white/20 text-white rounded-full"
+        href="">Contactanos</a
+      >
     </div>
   </div>
 </header>
