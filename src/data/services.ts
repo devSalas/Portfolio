@@ -1,20 +1,17 @@
 export const services = [
   {
-    title: "Chat con IA",
+    title: "Diseño Web Personalizado",
     description:
-      "Integra un chatbot impulsado por inteligencia artificial en tu sitio web para ofrecer asistencia automatizada a tus clientes. Responde preguntas frecuentes, brinda soporte 24/7 y mejora la experiencia del usuario.",
-    image: "/images/1.png",
+      "Creamos páginas web a medida que reflejan la identidad y necesidades únicas de tu negocio, garantizando una experiencia visual y funcional de alta calidad.",
   },
   {
-    title: "Chat para WhatsApp",
+    title: "Chatbots con IA",
     description:
-      "Facilita la comunicación directa con tus clientes a través de WhatsApp. Implementa un chat en tu sitio web que se conecte directamente con tu cuenta de WhatsApp, permitiendo una interacción rápida y eficiente.",
-    image: "/images/2.png",
+      "Implementamos chatbots avanzados con IA que mejoran la interacción con tus clientes, ofreciendo respuestas rápidas y precisas las 24 horas del día.",
   },
   {
-    title: "Envíos de Mensajes Masivos por WhatsApp",
+    title: "Optimización SEO",
     description:
-      "Envía mensajes masivos a tus clientes a través de WhatsApp para mantenerlos informados sobre promociones, novedades y actualizaciones. Una herramienta poderosa para campañas de marketing directo y comunicación efectiva.",
-    image: "/images/3.png",
+      "Mejoramos la visibilidad de tu sitio web en los motores de búsqueda mediante técnicas avanzadas de SEO, atrayendo más tráfico y potenciando tu presencia online.",
   },
 ];
