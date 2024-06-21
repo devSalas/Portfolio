@@ -2,8 +2,15 @@
 
 ---
 
-<section class="flex gap-x-5 overflow-x-hidden" >
-    <div class=" flex gap-x-10">
+<section class="flex flex-col gap-x-5 gap-y-8 overflow-x-hidden" >
+    <div id="slider1" class=" flex gap-x-10">
+        <img class="rounded-xl" src="https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/advisor/in/wp-content/uploads/2022/03/monkey-g412399084_1280.jpg" alt="">
+        <img class="rounded-xl" src="https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/advisor/in/wp-content/uploads/2022/03/monkey-g412399084_1280.jpg" alt="">
+        <img class="rounded-xl" src="https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/advisor/in/wp-content/uploads/2022/03/monkey-g412399084_1280.jpg" alt="">
+        <img class="rounded-xl" src="https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/advisor/in/wp-content/uploads/2022/03/monkey-g412399084_1280.jpg" alt="">
+        <img class="rounded-xl" src="https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/advisor/in/wp-content/uploads/2022/03/monkey-g412399084_1280.jpg" alt="">
+    </div>
+    <div id="slider2" class=" flex gap-x-10 translate-x-[-0px]">
         <img class="rounded-xl" src="https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/advisor/in/wp-content/uploads/2022/03/monkey-g412399084_1280.jpg" alt="">
         <img class="rounded-xl" src="https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/advisor/in/wp-content/uploads/2022/03/monkey-g412399084_1280.jpg" alt="">
         <img class="rounded-xl" src="https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/advisor/in/wp-content/uploads/2022/03/monkey-g412399084_1280.jpg" alt="">
@@ -12,8 +19,14 @@
     </div>
 </section>
 <style>
-    div{
+    #slider1{
         animation: slider auto linear both;
+		animation-timeline: scroll(root);
+		animation-range: 0 1500px;
+    }
+
+    #slider2{
+        animation: slider2 auto linear both;
 		animation-timeline: scroll(root);
 		animation-range: 0 1500px;
     }
@@ -35,5 +48,16 @@
             transform: translateX(-410%);
         }
     }
+    @keyframes slider2{
+        1%{
+            transform: translateX(-410%);
+        }
+
+        100%{
+            transform: translateX(-20%);
+        }
+    }
+
+
 </style>
 
