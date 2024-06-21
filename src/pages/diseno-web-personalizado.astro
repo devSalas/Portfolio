@@ -1,0 +1,65 @@
+---
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import Banner from "../components/Banner.astro";
+
+const data = {
+  title: "Diseño Web Personalizado",
+  description:
+    "En Sunetya, nos especializamos en crear páginas web personalizadas que reflejan la identidad única de tu negocio. Comenzamos con una consulta detallada para comprender tus necesidades y objetivos, y trabajamos contigo para desarrollar un diseño atractivo, intuitivo y fácil de usar.",
+  features: [
+    {
+      title: "Consultoría de Diseño",
+      description:
+        "Proporcionamos asesoramiento personalizado y análisis de competencia para destacar tu sitio web, asegurando que refleje tus objetivos y se diferencie en el mercado.",
+      image: "1.png",
+    },
+    {
+      title: "Diseño Responsivo",
+      description:
+        "Diseñamos sitios web adaptables que se ven y funcionan perfectamente en todos los dispositivos, ofreciendo una experiencia de usuario fluida y coherente.",
+      image: "2.png",
+    },
+    {
+      title: "Optimización SEO",
+      description:
+        "Realizamos optimizaciones de SEO on-page y técnico, mejorando la visibilidad de tu sitio web en los motores de búsqueda mediante la optimización de contenido y aspectos técnicos.",
+      image: "3.png",
+    },
+  ],
+};
+---
+
+<Layout title="Sunetya - Diseño web personalizado">
+  <Navbar />
+  <main class="max-w-7xl mx-auto px-6">
+    <section class="h-svh flex flex-col justify-center gap-12">
+      <h1 class="text-slate-200 inline-block text-7xl font-bold">
+        {data.title}
+      </h1>
+      <p class="text-slate-400 text-4xl">{data.description}</p>
+    </section>
+    <section class="">
+      <div class="flex flex-col gap-12">
+        {
+          data.features.map(({ title, description, image }) => (
+            <article class="flex even:flex-row-reverse gap-12 py-24">
+              <div class="w-1/2 flex flex-col justify-center gap-12">
+                <h3 class="text-slate-300 text-5xl">{title}</h3>
+                <p class="text-slate-400 text-2xl text-balance">
+                  {description}
+                </p>
+              </div>
+              <div class="w-1/2">
+                <img src={image} alt="" />
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+    <Banner />
+    <Footer />
+  </main>
+</Layout>

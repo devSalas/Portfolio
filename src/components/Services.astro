@@ -11,8 +11,8 @@ import Section from "./ui/Section.astro";
 >
   <div class="grid grid-cols-3 gap-6">
     {
-      services.map(({ title, description }) => (
-        <ServiceCard title={title} description={description} />
+      services.map(({ title, description, link }) => (
+        <ServiceCard title={title} description={description} link={link} />
       ))
     }
   </div>
