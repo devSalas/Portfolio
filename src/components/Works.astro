@@ -1,6 +1,7 @@
 ---
 import WorkCard from "./WorkCard.astro";
 import Section from "./ui/Section.astro";
+import { works } from "../data/works";
 ---
 
 <Section
@@ -9,8 +10,16 @@ import Section from "./ui/Section.astro";
   subtitle="Proyectos que Reflejan Nuestra Pasión y Experiencia"
 >
   <div class="grid md:grid-cols-2 gap-6">
-    <WorkCard />
-    <WorkCard />
+    {
+      works.map(({ title, description, image, link }) => (
+        <WorkCard
+          title={title}
+          description={description}
+          image={image}
+          link={link}
+        />
+      ))
+    }
   </div>
   <div
     class="absolute -z-50 top-0 left-64 bg-violet-500/20 w-96 h-96 rounded-full blur-[100px]"

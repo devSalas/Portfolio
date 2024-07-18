@@ -1,0 +1,38 @@
+---
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/ui/Button.astro";
+---
+
+<Layout title="Sunetya">
+  <Navbar />
+
+  <main class="max-w-7xl mx-auto px-6">
+    <section class="h-svh flex flex-col justify-center">
+      <h1 class="text-2xl text-slate-200 text-center mb-6">Contáctanos</h1>
+      <form action="" method="post" class="flex flex-col gap-3 w-96 mx-auto">
+        <label for="">Nombre completo:</label>
+        <input class="tex" type="text" />
+        <label for="">Correo electrónico:</label>
+        <input class="tex" type="text" />
+        <label for="">Número de teléfono:</label>
+        <input class="tex" type="text" />
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <Footer />
+  </main>
+</Layout>
+
+<style>
+  label {
+    @apply text-slate-200;
+  }
+  input {
+    @apply bg-transparent text-slate-200 py-2 px-4 rounded-full border;
+  }
+  button {
+    @apply bg-purple-500 text-slate-200 py-2 px-4 rounded-full;
+  }
+</style>
