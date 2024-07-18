@@ -1,0 +1,68 @@
+---
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import Banner from "../components/Banner.astro";
+
+const data = {
+  title: "Chatbots con IA",
+  description:
+    "Ofrecemos el desarrollo de chatbots avanzados con inteligencia artificial para mejorar la interacción con tus clientes y aumentar la eficiencia de tu servicio al cliente. Nuestros chatbots pueden manejar una amplia gama de consultas de manera automatizada y disponible las 24 horas del día.",
+  features: [
+    {
+      title: "Interacción Natural",
+      description:
+        "Utilizamos tecnologías de procesamiento de lenguaje natural (NLP) para que los chatbots comprendan y respondan de manera similar a un humano. Esto garantiza que las interacciones sean fluidas y naturales, mejorando la experiencia del usuario.",
+      image:
+        "https://cdn.dribbble.com/userupload/15637281/file/original-36b65e650fb89b70a0eb67f53a9f7a89.png?resize=1200x900",
+    },
+    {
+      title: "Integración Multiplataforma",
+      description:
+        "Nuestros chatbots pueden integrarse con múltiples plataformas, como sitios web, aplicaciones móviles y redes sociales. Esto permite que tus clientes puedan interactuar con tu negocio a través de su canal preferido, aumentando el alcance y la accesibilidad de tu servicio al cliente.",
+      image:
+        "https://cdn.dribbble.com/userupload/15644027/file/original-8bbb7352eeabee6b7496accaab32d98d.png?resize=1200x900",
+    },
+    {
+      title: "Automatización de Tareas",
+      description:
+        "Los chatbots pueden manejar una variedad de tareas, desde responder preguntas frecuentes hasta realizar reservas, consultas de productos, asistencia técnica y más. Esta automatización reduce la carga de trabajo de tu equipo humano, permitiéndoles enfocarse en tareas más complejas y de mayor valor.",
+      image:
+        "https://cdn.dribbble.com/userupload/15624599/file/original-1e3871851377fb56e7ac3436618dbaba.jpg?resize=1200x900",
+    },
+  ],
+};
+---
+
+<Layout title="Sunetya - Diseño web personalizado">
+  <Navbar />
+  <main class="max-w-7xl mx-auto px-6">
+    <section class="h-svh flex flex-col justify-center gap-12">
+      <h1 class="text-slate-200 inline-block text-7xl font-bold">
+        {data.title}
+      </h1>
+      <p class="text-slate-400 text-4xl">{data.description}</p>
+    </section>
+    <section class="">
+      <div class="flex flex-col gap-12">
+        {
+          data.features.map(({ title, description, image }) => (
+            <article class="flex even:flex-row-reverse gap-12 py-24">
+              <div class="w-1/2 flex flex-col justify-center gap-12">
+                <h3 class="text-slate-300 text-5xl">{title}</h3>
+                <p class="text-slate-400 text-2xl text-balance">
+                  {description}
+                </p>
+              </div>
+              <div class="w-1/2">
+                <img class="rounded-3xl" src={image} alt="" />
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+    <Banner />
+    <Footer />
+  </main>
+</Layout>

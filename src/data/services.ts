@@ -6,10 +6,10 @@ export const services = [
     link: "/diseno-web-personalizado",
   },
   {
-    title: "chatbots-con-ia",
+    title: "Chatbots con IA",
     description:
       "Implementamos chatbots avanzados con inteligencia artificial que mejoran la interacción con tus clientes, ofreciendo respuestas rápidas y precisas las 24 horas del día.",
-    link: "/diseno-web-personalizado",
+    link: "/chatbots-con-ia",
   },
   {
     title: "Optimización SEO",

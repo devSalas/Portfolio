@@ -5,7 +5,7 @@ import { contact } from "../data/contact";
 ---
 
 <footer class="py-12 flex flex-col gap-12">
-  <div class="flex justify-between">
+  <div class="flex justify-between md:flex-row flex-col gap-12">
     <header class="flex flex-col gap-3">
       <h2 class="text-slate-200 text-2xl font-bold">Sunetya.</h2>
       <p class="text-slate-400 md:w-96">
@@ -13,8 +13,8 @@ import { contact } from "../data/contact";
         ideas en experiencias digitales impactantes.
       </p>
     </header>
-    <section class="flex gap-12">
-      <nav class="min-w-40 flex flex-col gap-3">
+    <section class="flex gap-12 md:flex-row flex-col">
+      <nav class="min-w-40 flex flex-col items-start gap-3">
         <h3 class="text-slate-300 text-sm font-bold">PAGINAS</h3>
         {
           links.map(({ title, href }) => (
@@ -24,7 +24,7 @@ import { contact } from "../data/contact";
           ))
         }
       </nav>
-      <nav class="min-w-40 flex flex-col gap-3">
+      <nav class="min-w-40 flex flex-col items-start gap-3">
         <h3 class="text-slate-300 text-sm font-bold">REDES SOCIALES</h3>
         {
           socialNetworks.map(({ title, href }) => (
@@ -34,7 +34,7 @@ import { contact } from "../data/contact";
           ))
         }
       </nav>
-      <nav class="min-w-40 flex flex-col gap-3">
+      <nav class="min-w-40 flex flex-col items-start gap-3">
         <h3 class="text-slate-300 text-sm font-bold">CONTACTO</h3>
         {
           contact.map(({ title, href }) => (
