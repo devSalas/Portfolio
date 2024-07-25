@@ -1,6 +1,7 @@
 ---
 import { links } from "../data/links";
 import { socialNetworks } from "../data/social-networks";
+import { contact } from "../data/contact";
 ---
 
 <footer class="py-12 flex flex-col gap-12">
@@ -14,18 +15,30 @@ import { socialNetworks } from "../data/social-networks";
     </header>
     <section class="flex gap-12">
       <nav class="min-w-40 flex flex-col gap-3">
+        <h3 class="text-slate-300 text-sm font-bold">PAGINAS</h3>
         {
           links.map(({ title, href }) => (
-            <a class="text-slate-300 hover:text-slate-100 text-xl" href={href}>
+            <a class="text-slate-400 hover:text-slate-100 text-xl" href={href}>
               {title}
             </a>
           ))
         }
       </nav>
       <nav class="min-w-40 flex flex-col gap-3">
+        <h3 class="text-slate-300 text-sm font-bold">REDES SOCIALES</h3>
         {
           socialNetworks.map(({ title, href }) => (
-            <a class="text-slate-300 hover:text-slate-100 text-xl" href={href}>
+            <a class="text-slate-400 hover:text-slate-100 text-xl" href={href}>
+              {title}
+            </a>
+          ))
+        }
+      </nav>
+      <nav class="min-w-40 flex flex-col gap-3">
+        <h3 class="text-slate-300 text-sm font-bold">CONTACTO</h3>
+        {
+          contact.map(({ title, href }) => (
+            <a class="text-slate-400 hover:text-slate-100 text-xl" href={href}>
               {title}
             </a>
           ))
