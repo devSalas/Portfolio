@@ -5,4 +5,10 @@ export const works = [
     image: "",
     link: "",
   },
+  {
+    title: "",
+    description: "",
+    image: "",
+    link: "",
+  },
 ];
