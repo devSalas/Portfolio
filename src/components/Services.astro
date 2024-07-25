@@ -9,7 +9,7 @@ import Section from "./ui/Section.astro";
   title="Servicios"
   subtitle="Impulsa tu Negocio con Nuestros Servicios Especializados"
 >
-  <div class="grid grid-cols-3 gap-6">
+  <div class="grid md:grid-cols-3 gap-6">
     {
       services.map(({ title, description, link }) => (
         <ServiceCard title={title} description={description} link={link} />
