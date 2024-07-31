@@ -17,12 +17,22 @@ const { title, description, image, link, video } = Astro.props;
     alt=""
   /> -->
   <div class="relative">
-    <a href={link} target="_blank" class="absolute w-full h-full cursor-pointer z-10 ">
+    <a
+      href={link}
+      target="_blank"
+      class="absolute w-full h-full cursor-pointer z-10"
+    >
     </a>
-    <video  src={video} loop autoplay  muted preload="auto" class="w-full opacity-80 rounded-2xl"></video>
+    <video
+      src={video}
+      loop
+      autoplay
+      muted
+      preload="auto"
+      class="w-full opacity-80 rounded-2xl"></video>
   </div>
 
-  <h3 class="text-slate-300 text-2xl font-bold">{title}</h3>
+  <h3 class="text-slate-300 md:text-2xl text-xl font-bold">{title}</h3>
   <p class="text-slate-400 text-balance">
     {description}
   </p>

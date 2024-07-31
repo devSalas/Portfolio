@@ -1,51 +1,61 @@
 ---
-const url_base = "./images/section-carusel"
+const url_base = "./images/section-carusel";
 
 const projects_up = [
   {
-    url: url_base+"/dentlife/services.webp",
+    url: url_base + "/dentlife/services.webp",
   },
   {
-    url: url_base+"/gigamas/hero.webp",
+    url: url_base + "/gigamas/hero.webp",
   },
   {
-    url: url_base+"/gigamas/cable_carmen.webp",
+    url: url_base + "/gigamas/cable_carmen.webp",
   },
   {
-    url:url_base+"/dentlife/hero.webp",
+    url: url_base + "/dentlife/hero.webp",
   },
 ];
 const projects_down = [
-{
-    url:url_base+"/dentlife/hero.webp",
+  {
+    url: url_base + "/dentlife/hero.webp",
   },
   {
-    url: url_base+"/bravazo/hero.webp",
+    url: url_base + "/bravazo/hero.webp",
   },
   {
-    url: url_base+"/compusalas/hero.webp",
+    url: url_base + "/compusalas/hero.webp",
   },
   {
-    url: url_base+"/dentlife/services.webp",
+    url: url_base + "/dentlife/services.webp",
   },
 ];
 ---
 
-<section class="py-24 flex flex-col gap-12 w-full overflow-hidden">
-  <div class="slider-right   flex gap-12  h-80">
+<section
+  class="md:py-24 py-12 flex flex-col md:gap-12 gap-6 w-full overflow-hidden"
+>
+  <div class="slider-right flex md:gap-12 gap-6 md:h-80 h-40">
     {
       projects_up.map(({ url }) => (
         <div class="aspect-video ">
-          <img class="rounded-xl w-full h-full object-cover object-top" src={url} alt="" />
+          <img
+            class="rounded-xl w-full h-full object-cover object-top"
+            src={url}
+            alt=""
+          />
         </div>
       ))
     }
   </div>
-  <div class="slider-left  flex gap-12 h-80">
+  <div class="slider-left flex md:gap-12 gap-6 md:h-80 h-40">
     {
       projects_down.map(({ url }) => (
         <div class="aspect-video ">
-          <img class="rounded-xl w-full h-full object-cover object-top" src={url} alt="" />
+          <img
+            class="rounded-xl w-full h-full object-cover object-top"
+            src={url}
+            alt=""
+          />
         </div>
       ))
     }
@@ -58,7 +68,7 @@ const projects_down = [
     animation-range: 0% 100%;
   }
   .slider-left {
-    animation: slider2 auto linear both ;
+    animation: slider2 auto linear both;
     animation-timeline: scroll(root);
     animation-range: 0% 100%;
   }
@@ -74,11 +84,10 @@ const projects_down = [
 
   @keyframes slider2 {
     0% {
-
       transform: translateX(-50%);
     }
     100% {
-      transform: translateX(100%);
+      transform: translateX(150%);
     }
   }
 </style>
