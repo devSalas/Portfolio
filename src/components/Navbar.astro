@@ -1,6 +1,7 @@
 ---
 import { links } from "../data/links";
 import Button from "./ui/Button.astro";
+import { linkWhatsapp } from "../data/contact";
 ---
 
 <header class="navbar fixed z-50 inset-x-0 backdrop-blur">
@@ -27,7 +28,7 @@ import Button from "./ui/Button.astro";
     <div class="flex justify-end items-center">
       <a
         class="py-3 px-6 bg-slate-900 hover:bg-violet-700 text-white rounded-full transition-colors duration-500"
-        href="https://wa.me/+51927859435">Contactar</a
+        href={linkWhatsapp} target="_blank">Contactar</a
       >
 
     </div>
