@@ -1,11 +1,7 @@
 export const links = [
   {
-    title: "Nosotros",
+    title: "Acerca de mi",
     href: "/#about",
-  },
-  {
-    title: "Servicios",
-    href: "/#services",
   },
   {
     title: "Trabajos",

@@ -1,14 +1,11 @@
 export const socialNetworks = [
   {
-    title: "Facebook",
-    href: "",
+    title: "Github",
+    href: "https://github.com/devSalas",
   },
   {
     title: "Linkedin",
-    href: "",
+    href: "https://www.linkedin.com/in/devsalas/",
   },
-  {
-    title: "Instagram",
-    href: "",
-  },
+
 ];
