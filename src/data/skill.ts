@@ -60,7 +60,7 @@ export const MySkills = [
         classN:""
     },
     {
-        name:"Typescript.js",
+        name:"Typescript",
         url:"/skills/typescript.png",
         width:50,
         classN:""

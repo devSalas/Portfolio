@@ -7,4 +7,8 @@ export const links = [
     title: "Trabajos",
     href: "/#works",
   },
+  {
+    title: "Skills",
+    href: "/#skills",
+  },
 ];
