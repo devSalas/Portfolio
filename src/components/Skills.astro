@@ -1,0 +1,19 @@
+---
+import { MySkills } from "../data/skill";
+import Skill from "./Skill.astro";
+import Section from "./ui/Section.astro";
+---
+
+<Section
+  id="skill"
+  title="Mis Skills"
+  subtitle="Mis herramientas con los que hago realidad cualquier proyecto"
+>
+  <div class="grid md:grid-cols-4 gap-6">
+   {
+    MySkills.map((skill)=>(
+        <Skill name={skill.name} image={skill.url } width={skill.width}  classN={skill.classN} />
+    ))
+   }
+  </div>
+</Section>

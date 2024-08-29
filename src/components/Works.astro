@@ -11,7 +11,7 @@ import { works } from "../data/works";
 >
   <div class="grid md:grid-cols-2 gap-6">
     {
-      works.map(({ title, description, image, link, video, tag, color}) => (
+      works.map(({ title, description, image, link, video, tag, color,skill}) => (
         <WorkCard
           title={title}
           description={description}
@@ -20,6 +20,7 @@ import { works } from "../data/works";
           tag= {tag}
           color={color}
           video={video}
+          skill={skill}
         />
       ))
     }

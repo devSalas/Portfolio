@@ -1,15 +1,23 @@
 ---
+interface Skill {
+  name: string;
+  url: string;
+  width?:number;
+}
+
 interface Props {
   title: string;
   description: string;
   image: string;
   link: string;
   video?: string;
-  tag?: string
-  color?: string
+  tag?: string;
+  color?: string;
+  skill: Skill[];
 }
 
-const { title, description, image, link, video, tag, color } = Astro.props;
+const { title, description, image, link, video, tag, color, skill } =
+  Astro.props;
 ---
 
 <article class="flex flex-col gap-6">
@@ -35,7 +43,34 @@ const { title, description, image, link, video, tag, color } = Astro.props;
   </div>
 
   <h3 class="text-slate-300 md:text-2xl text-xl font-bold">{title}</h3>
-  {color && tag  && <p><span class={color + " inline-block  rounded-xl text-white text-[12px] px-3 py-1"}>{tag}</span></p> }
+ 
+<div class="flex flex-col md:flex-row md:justify-between gap-2">
+  {
+    color && tag && (
+      <p>
+        <span
+          class={
+            color + " inline-block  rounded-xl text-white text-[12px] px-3 py-1"
+          }
+        >
+          {tag}
+        </span>
+      </p>
+    )
+  }
+  <div class="flex gap-3">
+    {
+      skill.map(skill => (
+        <span class="flex justify-center items-center">
+          <img src={skill.url}  alt="" width={`${skill.width || "40px"}`}/>
+         
+        </span>
+      ))
+    }
+  </div>
+</div>
+
+
   <p class="text-slate-400 text-balance">
     {description}
   </p>
