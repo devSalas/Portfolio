@@ -5,12 +5,25 @@ import Section from "./ui/Section.astro";
 ---
 
 <Section id="about" title="¿Quién Soy?">
-  <p>
-    ¡Hola! Soy <strong>Esteban Salas</strong>, un programador web apasionado por crear soluciones digitales innovadoras y funcionales. Este portafolio es una muestra de mi trabajo y habilidades en desarrollo web, abarcando desde el diseño de interfaces intuitivas hasta la implementación de aplicaciones web complejas.
+  <figure>
+    <img
+      src="https://avatars.githubusercontent.com/u/72365664?v=4"
+      alt="Perfil de Esteban Salas Sulca"
+      class="rounded-full m-auto max-w-[200px] sm:max-w-[300px]"
+    />
+  </figure>
+  <p class="max-w-[700px] m-auto ">
+    Soy la persona que primero buscar entender tu <span class="text-blue-500">negocio</span> para luego darte
+    soluciones atraves de <span class="text-blue-500">herramientas tecnologicas</span>.
+    <br><br>
+    <sub class="text-sm text-gray-400">
+      "El lenguaje de programación pasa a segundo plano cuando entiendes el modelo
+      de negocio."
+    </sub>
   </p>
+
   <div class="flex justify-center">
-    <Button  href={linkWhatsapp}  >Contáctame</Button>
-   
+    <Button href={linkWhatsapp}>Contáctame</Button>
   </div>
   <div
     class="absolute -z-50 top-0 left-64 bg-violet-500/20 w-96 h-96 rounded-full blur-[100px]"

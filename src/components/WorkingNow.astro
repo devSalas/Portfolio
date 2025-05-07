@@ -1,0 +1,33 @@
+---
+import { linkWhatsapp } from "../data/contact";
+import { LinkedInPost } from "../data/links";
+import Button from "./ui/Button.astro";
+import Section from "./ui/Section.astro";
+---
+
+<Section id="about" title="🚀 Lo que estoy desarrollando ahora">
+    
+    <p>
+        Estoy desarrollando una <span class="text-green-500">aplicación móvil</span> con <span  class="text-green-500">Flutter y Bluetooth</span> para
+        automatizar el pesaje de animales en la empresa Los Molinos. 
+    </p>
+    <figure class=" m-auto my-4 md:my-0">
+        <img src="molino_app.png"  alt="" class=" sm:max-h-[500px] object-cover">
+    </figure>
+    <div class="flex justify-center">
+        <Button href={LinkedInPost}>Visitar publicación</Button>
+    </div>
+    <div
+        class="absolute -z-50 top-0 left-64 bg-violet-500/20 w-96 h-96 rounded-full blur-[100px]"
+    >
+    </div>
+</Section>
+
+<style>
+    p {
+        @apply text-slate-500 md:text-4xl text-xl text-center;
+    }
+    strong {
+        @apply text-slate-200;
+    }
+</style>
