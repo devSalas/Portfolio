@@ -1,10 +1,10 @@
 export const works = [
   {
-    title: "Diseño Personalizado para Gigamas, Empresa de Telecomunicaciones",
-    description: "Se desarrolló un diseño web a medida para una empresa líder en servicios de Internet, enfocándonos en resaltar su identidad y mejorar la experiencia del usuario.",
+    title: "Diseño Personalizado para terminal Samanta, Empresa de Terminal Transporte",
+    description: "Se desarrolló un diseño web a medida para una empresa líder en servicios de transporte interprovincial, enfocándonos en resaltar su identidad y mejorar la experiencia del usuario.",
     image: "",
-    video:"video/gigamas/overview.mp4",
-    link: "https://gigamas.com.pe",
+    video:"video/tss/overview.mp4",
+    link: "https://terminal-ss.com/",
     tag:"Trabajo profesional",
     color: "bg-blue-700",
     skill: [
@@ -15,8 +15,8 @@ export const works = [
       },
       {
           name:"Tailwindcss",
-          url:"/skills/tailwind.png",
-          width:30
+          url:"/skills/tailwindcss.svg",
+          width:40
       },
       {
           name:"PHP",
@@ -41,8 +41,8 @@ export const works = [
       },
       {
           name:"Tailwindcss",
-          url:"/skills/tailwind.png",
-          width:30
+          url:"/skills/tailwindcss.svg",
+          width:40
       },
       {
           name:"JavaScript",
@@ -52,71 +52,51 @@ export const works = [
   
     ]
   },
-  {
-    title: "App de Comida rápida",
-    description: "Proyecto en equipo de una aplicación de comida rápida desarrollada desde cero. Este proyecto tiene como base de datos MySQL, en el Backend Node.js, en el Frontend Next.js y esta deployado en un VPS.",
+   {
+    title: "Portafolio web EnzoAcabos",
+    description: "Página web para un cliente que realiza trabajos con Drywall, Melimine, Vidrio, etc.",
     image: "",
-    video:"video/food-app/overview.mp4",
-    link: "https://food-app.sunetya.site/",
+    video:"video/enzo/overview.mp4",
+    link: "https://www.enzoacabados.com/",
+    tag:"Trabajo Profesional",
+    color:"bg-blue-700",
+    skill: [
+      {
+          name:"Next.js",
+          url:"/skills/nextjs.svg",
+          width:40
+      },
+      {
+          name:"Tailwindcss",
+          url:"/skills/tailwindcss.svg",
+          width:40
+      }
+
+    ]
+  },
+  {
+    title: "Finanza app - Gestion de Finanza personal",
+    description: "Aplicación web desarrollador con Next.js, Laravel y MySQL. Utíl para registrar ingresos, gastos y ahorros personales.",
+    image: "",
+    video:"video/finanza/overview.mp4",
+    link: "https://finanza.site/",
     tag:"Proyecto Profesional",
     color:"bg-green-700",
     skill: [
       {
           name:"Next.js",
-          url:"/skills/next.png",
+          url:"/skills/nextjs.svg",
           width:40
       },
       {
           name:"Tailwindcss",
-          url:"/skills/tailwind.png",
+          url:"/skills/tailwindcss.svg",
           width:40
       },
       {
           name:"Node.js",
-          url:"/skills/nodejs.png",
-          width:40
-      },
-      {
-          name:"MySql.js",
-          url:"/skills/mysql.png",
-          width:40
-      },
-      {
-          name:"Stripe.js",
-          url:"/skills/stripe.png",
-          width:40
-      },
-  
-    ]
-  },
-  {
-    title: "CompuSalas - Tu Tienda de Componentes de Computadora",
-    description: "E-commerce desarrollado con React, Node.js y MySQL. Compra rápida y segura de componentes de computadora con una interfaz moderna y fácil de usar.",
-    image: "",
-    video:"video/compusalas/overview.mp4",
-    link: "https://compusalas.netlify.app/",
-    tag:"Proyecto Profesional",
-    color:"bg-green-700",
-    skill: [
-      {
-          name:"React.js",
-          url:"/skills/React.png",
-          width:40
-      },
-      {
-          name:"Tailwindcss",
-          url:"/skills/tailwind.png",
-          width:40
-      },
-      {
-          name:"Node.js",
-          url:"/skills/nodejs.png",
-          width:40
-      },
-      {
-          name:"MongoDB.js",
-          url:"/skills/mongo.png",
-          width:40
+          url:"/skills/mysql.svg",
+          width:45
       },
       {
           name:"React-query",
@@ -125,7 +105,7 @@ export const works = [
       },
       {
           name:"Stripe.js",
-          url:"/skills/stripe.png",
+          url:"/skills/laravel.svg",
           width:40
       },
   
